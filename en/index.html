@@ -242,37 +242,37 @@
     </section>
     <section class="seccion-form" id="contact">
         <h3>Contact Us</h3>
-        <form action="" class="contact-form">
+        <form action="/send-email" method="POST" class="contact-form">
             <div class="campo-row">
                 <div class="campo">
                     <label for="nombre">Name</label>
-                    <input type="text" name="nombre">
+                    <input type="text" name="nombre" required>
                 </div>
                 <div class="campo">
                     <label for="apellido">Last Name</label>
-                    <input type="text" name="apellido">
+                    <input type="text" name="apellido" required>
                 </div>
             </div>
             <div class="campo">
-                <label for="mail">email</label>
-                <input type="email" name="mail">
+                <label for="email">email</label>
+                <input type="email" name="email" required>
             </div>
             <div class="campo-row">
                 <div class="campo">
                     <label for="compania">Company</label>
-                    <input type="text" name="compania">
+                    <input type="text" name="compania" required>
                 </div>
                 <div class="campo">
-                    <label for="cargo">Charge in company</label>
-                    <input type="text" name="cargo">
+                    <label for="rol">Charge in company</label>
+                    <input type="text" name="rol" required>
                 </div>
             </div>
             <div class="campo">
                 <label for="mensaje">message</label>
-                <textarea name="mensaje"></textarea>
+                <textarea name="mensaje" required></textarea>
             </div>
             <div class="campo">
-                <button class="btn-round">Send</button>
+                <button class="btn-round" type="submit">Send</button>
             </div>
         </form>
     </section>

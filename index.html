@@ -250,39 +250,40 @@
     <!--CONTACTO-->
     <section class="seccion-form" id="contacto">
         <h3>Contactanos</h3>
-        <form action="" class="contact-form">
+        <form action="/send-email" method="POST" class="contact-form">
             <div class="campo-row">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
+                    <input type="text" name="nombre" required>
                 </div>
                 <div class="campo">
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido">
+                    <input type="text" name="apellido" required>
                 </div>
             </div>
             <div class="campo">
-                <label for="mail">email</label>
-                <input type="email" name="mail">
+                <label for="email">email</label>
+                <input type="email" name="email" required>
             </div>
             <div class="campo-row">
                 <div class="campo">
                     <label for="compania">Compañía</label>
-                    <input type="text" name="compania">
+                    <input type="text" name="compania" required>
                 </div>
                 <div class="campo">
                     <label for="rol">rol en la compañía</label>
-                    <input type="text" name="rol">
+                    <input type="text" name="rol" required>
                 </div>
             </div>
             <div class="campo">
                 <label for="mensaje">mensaje</label>
-                <textarea name="mensaje" id=""></textarea>
+                <textarea name="mensaje" required></textarea>
             </div>
             <div class="campo">
-                <button class="btn-round">Enviar</button>
+                <button type="submit" class="btn-round" id="btn-enviar">Enviar</button>
             </div>
         </form>
+        
     </section>
     <footer class="site-footer">
         <div class="footer-grid">

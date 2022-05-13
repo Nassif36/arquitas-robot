@@ -1,3 +1,5 @@
+
+
 window.addEventListener('DOMContentLoaded', (event) => {
 
     // Menu mobile
@@ -36,15 +38,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let enURL = "en/index.html";
         let esURL = "/"
 
-
         if (id == true) {
             location.href = enURL;
+            
         } else {
             location.href = esURL;
         }
+       
 
     }
     
+
+   
 });
 
 

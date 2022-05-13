@@ -710,8 +710,10 @@ section {
   .coming-soon h2 {
     animation: coming 1s ease alternate forwards;
     min-height: 40vh;
-    font-size: calc(4vw + 1rem);
     color: #E22470; }
+    @media screen and (min-width: 1200px) {
+      .coming-soon h2 {
+        font-size: calc(4vw + 1rem); } }
 
 .seccion-form h3 {
   text-align: center;
@@ -758,6 +760,38 @@ section {
       .seccion-form .contact-form .campo-row {
         margin: 1.2em;
         flex-direction: column; } }
+
+.mail-200 {
+  display: grid;
+  place-content: center;
+  min-height: 100vh; }
+  .mail-200 h2 {
+    text-align: center; }
+  .mail-200 img {
+    max-width: 350px;
+    margin: 0 auto; }
+
+.status {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1em;
+  justify-content: space-between;
+  max-width: 850px;
+  padding: 4em;
+  border-radius: 33px;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+  .status p {
+    padding: .5em 1em;
+    border-radius: 33px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fffffffe; }
+  .status .en {
+    background-color: #f32f0cfe; }
+  .status .es {
+    background-color: #03caf6; }
 
 .site-footer {
   padding: 1em;

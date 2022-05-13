@@ -55,3 +55,43 @@
         }
     }
 }
+
+.mail-200 {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    h2 {
+        text-align: center;
+    }
+    img {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+ 
+}
+.status {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1em;
+    justify-content: space-between;
+    max-width: 850px;
+
+    padding: 4em;
+    border-radius: 33px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    p {
+            padding: .5em 1em;
+              border-radius: 33px;
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: #fffffffe;
+    }
+    .en {
+        background-color: #f32f0cfe;
+    }
+    .es {
+        background-color: #03caf6;
+    }
+}
