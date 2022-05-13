@@ -1,0 +1,199 @@
+.seccion-arquitas {
+    @include contenedor;
+
+    @include grid(2);
+    @media screen and(max-width: 800px) {
+        @include grid(1);
+    }
+    gap: 1em;
+    min-height: 100vh;
+
+    .articulo-img {
+        @include flex(row);
+        img {
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto;
+            border-radius: 15.5px;
+           -webkit-box-shadow: -1px 0px 108px -80px rgba(0, 0, 0, 1);
+           -moz-box-shadow: -1px 0px 108px -80px rgba(0, 0, 0, 1);
+           box-shadow: -1px 0px 108px -80px rgba(0, 0, 0, 1);
+        }
+    }
+    .articulo-texto {
+        @include flex(column); 
+        align-items: flex-end;
+        justify-content: center;
+        max-width: 550px;
+       
+        p {
+            text-align: right;
+            padding: 1em 0;
+        }
+       @media screen and(max-width: 800px) {
+           align-items: center;
+           margin: 0 auto;
+        p {
+            text-align: center
+        }
+       }
+    }
+}
+
+.btn-round {
+    @include button;
+}
+
+section {
+    padding: 1.5em 0;
+    h2 {
+        text-align: center;
+    }
+}
+
+
+
+.soluciones-item {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+    align-items: center;
+     @include contenedor;
+    padding: 2em 0;
+    @media(max-width: 1050px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+    &:nth-child(3){
+        border-top: 2px solid $primario;
+        border-bottom: 2px solid $primario;
+    }
+
+    .item-layout {
+        width: 100%;
+       
+
+        
+        &:nth-of-type(1) {
+            @include flex(column);
+            max-width: max-content;
+            @media(max-width: 1050px) {
+                display: none;
+            }
+            p {
+                max-width: 16ch;
+                text-align: center;
+                margin: .5em auto;
+                font-weight: 600;
+
+            }
+        }
+
+        &:nth-of-type(2) {
+            @include grid(3);
+            grid-column: 2 / end;
+            @media(max-width: 1050px) {
+                grid-column: auto;
+               grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+               grid-row: 2;
+            }
+        }
+        img {
+            object-fit: cover;
+            max-width: 33px;
+            @media(max-width: 1050px) {
+                max-width: 25px;
+            }
+        }
+    }
+    
+}
+
+
+
+.seccion-funcionalidades {
+    text-align: center;
+    padding: 1em 0
+
+}
+
+.funcionalidades-grid {
+    @include grid(4);
+    @include contenedor;
+    padding: 3.6em 0;
+    @media(max-width: 1050px){
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+}
+
+
+.item-icon {
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    padding: .5em;
+
+    img {
+        margin: 0 auto;
+         object-fit: cover;
+         max-width: 36px;
+         @media(max-width: 1050px) {
+              max-width: 33px;
+         }
+    }
+
+    p {
+        max-width: 19ch;
+        text-align: center;
+    }
+}
+
+.seccion-economia {
+    @include contenedor;
+    @include grid(2);
+    gap: 2em;
+    min-height: 100vh;
+    @media screen and(max-width: 800px) {
+        @include grid(1);
+        min-height: unset;
+
+    }
+    .economia-img {
+        @include flex(row);
+
+        img {
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto;
+            border-radius: 15.5px;
+            -webkit-box-shadow: -1px 0px 109px -60px rgba(0, 0, 0, 1);
+            -moz-box-shadow: -1px 0px 109px -60px rgba(0, 0, 0, 1);
+            box-shadow: -1px 0px 109px -60px rgba(0, 0, 0, 1);
+        }
+    }
+
+    .economia-texto {
+        @include flex(column);
+        align-items: flex-end;
+        justify-content: center;
+        max-width: 550px;
+        
+
+        p {
+            text-align: right;
+            padding: 1em 0;
+        }
+         @media screen and(max-width: 800px) {
+            align-items: center;
+            text-align: center;
+            p {
+                 text-align: center;
+            }
+         }
+
+    }
+}
+
+

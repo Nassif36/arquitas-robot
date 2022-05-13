@@ -1,0 +1,57 @@
+.seccion-form {
+    h3 {
+        text-align: center;
+        padding: 2em 0;
+    }
+    .contact-form {
+        max-width: 750px;
+        margin: 0 auto;
+        .campo {
+            @include grid(1);
+            margin: 1.2em;
+            input,textarea {
+                border: none;
+                outline: none;
+                -webkit-box-shadow: 16px 7px 116px -58px rgba(0, 0, 0, 0.81);
+                -moz-box-shadow: 16px 7px 116px -58px rgba(0, 0, 0, 0.81);
+                box-shadow: 16px 7px 116px -58px rgba(0, 0, 0, 0.81);
+                padding: .7em .8em;
+                border: 1px solid transparent;
+                background-color: rgba(0, 0, 0, 0.04);
+                border-radius: 33px;
+                font-size: 1rem;
+                transition: all .5s ease;
+
+                &:focus {
+                     border: 1px solid $primario;
+                     box-shadow: none;
+                     background-color: #00000005;
+                }
+            }
+            label {
+                padding: .5em;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: .8rem;
+            }
+            button {
+                margin: 0 auto;
+                max-width: 250px;
+            }
+
+        }
+        .campo-row {
+            display: flex;
+            align-items: center;
+           
+           
+            .campo {
+                width: 100%;
+            }
+            @media screen and(max-width: 1050px) {
+                 margin: 1.2em;
+                flex-direction: column;
+            }
+        }
+    }
+}
