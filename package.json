@@ -1,0 +1,28 @@
+{
+  "name": "proyecto-migrar",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/Nassif36/arquitas-robot"
+  }
+}

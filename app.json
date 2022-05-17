@@ -1,0 +1,8 @@
+{
+    "name": "Arquitas",
+    "description": "Robot",
+    "repository": "https://github.com/Nassif36/arquitas-robotd",
+    "logo": "https://github.com/Nassif36/arquitas-robot/main/public/node.svg",
+    "keywords": ["node", "express", "heroku"],
+    "image": "heroku/nodejs"
+}
