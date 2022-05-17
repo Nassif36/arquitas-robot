@@ -74,4 +74,4 @@ app.get('/success', (req, res) => {
     res.render('success')
 })
 
-app.listen(port, () => console.info(`App listening on port ${port}`))
+app.listen(process.env.PORT || 3000, () => console.info(`App listening on port ${port}`))
