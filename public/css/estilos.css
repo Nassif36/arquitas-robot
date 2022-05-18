@@ -1100,8 +1100,26 @@ section h2 {
     display: grid;
     place-content: center;
     min-height: 100vh;
+    text-align: center;
 }
-
+.fa-arrow-left {
+    background-color: #e22470;
+    width: 100%;
+    color: white;
+    border-radius: 33px;
+    max-width: 250px;
+    padding: .3em 1em;
+    font-size: calc(3vw + 1rem);
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.fa-arrow-left:hover {
+     -webkit-box-shadow: 1px 1px 44px -16px #e22470;
+     -moz-box-shadow: 1px 1px 44px -16px #e22470;
+     box-shadow: 1px 1px 44px -16px #e22470;
+     background-color: white;
+     color: #e22470;
+}
 .mail-200 h2 {
     text-align: center;
 }
